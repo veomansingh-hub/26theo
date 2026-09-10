@@ -40,7 +40,7 @@ export default function CaseStudiesPage() {
                 {/* Visual */}
                 <div className="w-full lg:w-[60%]">
                   <div className="w-full aspect-[16/10] bg-charcoal relative overflow-hidden group shadow-2xl border border-near-black/5">
-                    <ProjectPreview url={project.demoUrl} title={project.title} />
+                    <ProjectPreview url={project.liveUrl} title={project.title} />
                     <div className="absolute inset-0 bg-near-black/0 group-hover:bg-near-black/10 transition-colors duration-500 pointer-events-none" />
                   </div>
                 </div>
@@ -65,12 +65,12 @@ export default function CaseStudiesPage() {
                       READ CASE STUDY →
                     </Link>
                     <Link 
-                      href={project.demoUrl}
+                      href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-[12px] font-sans font-medium tracking-[0.15em] uppercase text-stone border-b border-stone/30 pb-1 hover:text-near-black hover:border-near-black transition-colors"
                     >
-                      VIEW LIVE DEMO ↗
+                      VIEW EXPERIENCE ↗
                     </Link>
                   </div>
                 </div>

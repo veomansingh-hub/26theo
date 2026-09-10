@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 };
 
 export default function RestaurantCaseStudy() {
-  const demoUrl = "https://theo-table-gastropub-demo.vercel.app";
+  const liveUrl = "https://cinder-field.theomedia.co.uk";
 
   return (
     <main className="bg-bone min-h-screen text-near-black selection:bg-near-black selection:text-bone">
@@ -55,7 +55,7 @@ export default function RestaurantCaseStudy() {
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-8">
             <Link 
-              href={demoUrl}
+              href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="text-[12px] font-sans font-semibold tracking-[0.15em] uppercase text-near-black border-b border-near-black/30 pb-1 hover:border-near-black transition-colors inline-flex items-center"
@@ -72,11 +72,11 @@ export default function RestaurantCaseStudy() {
         </FadeIn>
       </section>
 
-      {/* Demo Visual Hero */}
+      {/* Project Visual Hero */}
       <section className="px-5 md:px-8 lg:px-12 max-w-[1440px] mx-auto mb-20 md:mb-32">
         <FadeIn delay={0.2}>
           <div className="w-full aspect-[16/10] bg-charcoal relative overflow-hidden shadow-2xl border border-near-black/5">
-            <ProjectPreview url={demoUrl} title="Cinder & Field Demo" />
+            <ProjectPreview url={liveUrl} title="Cinder & Field" />
           </div>
         </FadeIn>
       </section>
@@ -95,7 +95,7 @@ export default function RestaurantCaseStudy() {
             </div>
             <div>
               <div className="text-[10px] font-sans tracking-[0.2em] uppercase text-stone mb-2">Type</div>
-              <div className="text-[14px] font-medium text-near-black">Live Project Details</div>
+              <div className="text-[14px] font-medium text-near-black">Website Design & Development</div>
             </div>
             <div>
               <div className="text-[10px] font-sans tracking-[0.2em] uppercase text-stone mb-2">Market</div>
@@ -139,7 +139,7 @@ export default function RestaurantCaseStudy() {
                 <a href="#seasonal" className="text-[13px] font-sans text-stone hover:text-near-black transition-colors">Keep Seasonal Content Fresh</a>
                 <a href="#speed" className="text-[13px] font-sans text-stone hover:text-near-black transition-colors">A Restaurant Website Should Not Feel Slow</a>
                 <a href="#focused-on" className="text-[13px] font-sans text-stone hover:text-near-black transition-colors">What We Focused on</a>
-                <a href="#what-we-would-add" className="text-[13px] font-sans text-stone hover:text-near-black transition-colors">What We Would Add</a>
+                <a href="#what-we-would-add" className="text-[13px] font-sans text-stone hover:text-near-black transition-colors">Additional Capabilities</a>
                 <a href="#questions" className="text-[13px] font-sans text-stone hover:text-near-black transition-colors">Common Questions</a>
                 <a href="#main-lesson" className="text-[13px] font-sans text-stone hover:text-near-black transition-colors">The Main Lesson</a>
               </nav>
@@ -274,7 +274,7 @@ export default function RestaurantCaseStudy() {
               <p className="mb-6">A gastropub feels different from a fine dining restaurant. A neighbourhood bistro feels different from a cocktail bar. A family restaurant feels different from a romantic dining room.</p>
               <p className="mb-6">The website should reflect that. That means the design, photography, wording and layout should feel like the actual place.</p>
               <p className="mb-6">Cinder & Field was designed to feel warm, social and welcoming rather than overly formal.</p>
-              <p>A real client project would be shaped around the restaurant&apos;s own character.</p>
+              <p>We shape every bespoke project precisely around the restaurant&apos;s unique character and atmosphere.</p>
             </FadeIn>
 
             <FadeIn id="booking-obvious" className="mb-20 scroll-mt-32">
@@ -582,9 +582,9 @@ export default function RestaurantCaseStudy() {
 
             <FadeIn id="what-we-would-add" className="mb-20 scroll-mt-32">
               <h2 className="font-display text-[32px] md:text-[40px] text-near-black mb-6 leading-tight">
-                What We Would Add for a Real Restaurant or Gastropub
+                Additional Features for Restaurants & Gastropubs
               </h2>
-              <p className="mb-10">Cinder & Field was built as a restaurant website would be built around how the venue actually operates. Depending on the business, we could add:</p>
+              <p className="mb-10">Depending on the specific business requirements, we frequently integrate additional capabilities:</p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10">
                 <div>
@@ -699,18 +699,18 @@ export default function RestaurantCaseStudy() {
         <div className="max-w-[1440px] mx-auto text-center">
           <FadeIn>
             <h2 className="font-display text-[32px] md:text-[48px] mb-6">
-              Explore the Working Restaurant Demo
+              Explore Cinder & Field
             </h2>
             <p className="font-sans text-[16px] md:text-[18px] text-bone/70 max-w-2xl mx-auto mb-12">
-              Cinder & Field was created by TheoMedia as website design for a restaurant, gastropub, pub or independent dining business. 
+              Cinder & Field was designed and developed by TheoMedia for a restaurant, gastropub, pub or independent dining business. 
             </p>
             
             <div className="w-full max-w-5xl mx-auto aspect-[16/10] bg-near-black relative overflow-hidden shadow-2xl mb-12 border border-bone/10">
-              <ProjectPreview url={demoUrl} title="Cinder & Field Demo" />
+              <ProjectPreview url={liveUrl} title="Cinder & Field" />
             </div>
 
             <Link 
-              href={demoUrl}
+              href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="text-[13px] font-sans font-medium tracking-[0.15em] uppercase text-bone border-b border-bone/30 pb-1 hover:border-bone transition-colors inline-block mb-32"
@@ -736,7 +736,7 @@ export default function RestaurantCaseStudy() {
                   START A PROJECT →
                 </Link>
                 <a 
-                  href="https://wa.me/353852258004?text=Hi%20TheoMedia,%20I%20have%20a%20similar%20business%20to%20the%20Theo%20Table%20and%20would%20like%20to%20discuss%20a%20website%20project." 
+                  href="https://wa.me/353852258004?text=Hi%20TheoMedia,%20I%20have%20a%20similar%20business%20to%20Cinder%20%26%20Field%20and%20would%20like%20to%20discuss%20a%20website%20project." 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[13px] font-sans font-medium tracking-[0.1em] text-bone border border-bone/20 hover:border-bone/60 hover:bg-bone/5 transition-all duration-300 uppercase rounded-sm px-8 py-4"

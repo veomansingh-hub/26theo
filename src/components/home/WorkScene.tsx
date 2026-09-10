@@ -58,7 +58,7 @@ export default function WorkScene() {
                   className="flex flex-col gap-8 h-full"
                 >
                   <div className="w-full aspect-[16/10] bg-near-black relative overflow-hidden group shadow-2xl">
-                    <ProjectPreview url={projects[activeProject].demoUrl} title={projects[activeProject].title} />
+                    <ProjectPreview url={projects[activeProject].liveUrl} title={projects[activeProject].title} />
                   </div>
                   <div className="flex flex-col gap-6">
                     <div className="flex justify-between items-start">
@@ -74,7 +74,7 @@ export default function WorkScene() {
                           READ CASE STUDY →
                         </Link>
                         <Link 
-                          href={projects[activeProject].demoUrl} 
+                          href={projects[activeProject].liveUrl} 
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-[11px] tracking-widest font-sans uppercase border-b border-bone/30 pb-1 hover:border-bone transition-colors text-bone/60 hover:text-bone"
@@ -104,7 +104,7 @@ export default function WorkScene() {
             {projects.map((project) => (
               <FadeIn key={project.slug} className="flex flex-col gap-8">
                 <div className="w-full aspect-[16/10] bg-near-black relative overflow-hidden group shadow-2xl">
-                  <ProjectPreview url={project.demoUrl} title={project.title} />
+                  <ProjectPreview url={project.liveUrl} title={project.title} />
                 </div>
                 <div className="flex flex-col gap-4">
                   <span className="text-[10px] tracking-widest font-sans font-medium uppercase text-warm-accent">
@@ -123,7 +123,7 @@ export default function WorkScene() {
                       READ CASE STUDY →
                     </Link>
                     <Link 
-                      href={project.demoUrl} 
+                      href={project.liveUrl} 
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-[11px] tracking-widest font-sans uppercase border-b border-bone/30 pb-1 hover:border-bone transition-colors text-bone/60 inline-flex items-center"

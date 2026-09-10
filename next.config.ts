@@ -9,6 +9,25 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/case-studies',
+        destination: '/work',
+        permanent: true,
+      },
+      {
+        source: '/case-studies/:path*',
+        destination: '/work',
+        permanent: true,
+      },
+      {
+        source: '/work/:slug(\\w+.*)',
+        destination: '/work',
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

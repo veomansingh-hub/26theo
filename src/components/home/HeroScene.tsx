@@ -90,7 +90,7 @@ export default function HeroScene() {
               variants={itemVariants}
               className="font-sans text-[15px] sm:text-[16px] lg:text-[18px] text-bone/60 max-w-2xl mx-auto leading-relaxed mb-10 md:mb-12 px-4"
             >
-              Distinctive websites, ecommerce platforms and digital systems for ambitious businesses across the UK, Ireland and Europe.
+              Distinctive websites, ecommerce platforms and custom digital systems engineered around three commercial fundamentals: <span className="text-bone/90 font-medium">Get found. Get customers. Run better.</span>
             </motion.p>
             
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 w-full px-2">
@@ -98,7 +98,7 @@ export default function HeroScene() {
                 Start a Project
               </Link>
               <Link href="/work" className="w-full sm:w-auto px-8 py-4 text-[13px] font-medium tracking-[0.1em] text-bone border border-bone/20 hover:border-bone/60 hover:bg-bone/10 transition-all duration-300 text-center uppercase rounded-sm">
-                View the Work
+                View Capabilities
               </Link>
             </motion.div>
           </div>

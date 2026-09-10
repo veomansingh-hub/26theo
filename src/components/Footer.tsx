@@ -2,21 +2,20 @@ import Link from 'next/link';
 import { SITE, NAV_LINKS } from '@/lib/constants';
 
 const capabilities = [
-  'Websites',
-  'Ecommerce',
-  'Booking',
-  'Web Apps',
-  'Software',
+  'Bespoke Websites',
+  'Ecommerce Architectures',
+  'Direct Booking Systems',
+  'Custom Web Applications',
+  'Operational Portals',
 ];
 
 const industryLinks = [
-  'Hospitality',
-  'Restaurants',
-  'Automotive',
-  'Trades',
-  'Healthcare',
-  'Ecommerce',
-  'Public Figures',
+  'Hospitality & Stays',
+  'Dining & Gastropubs',
+  'Automotive & Workshops',
+  'Trades & Contractors',
+  'Private Healthcare',
+  'Premium Ecommerce',
 ];
 
 export function Footer() {
@@ -67,7 +66,7 @@ export function Footer() {
               THEOMEDIA
             </Link>
             <p className="text-[14px] text-bone/50 leading-relaxed max-w-[280px]">
-              Distinctive websites and digital experiences for ambitious businesses across the UK, Ireland, and Europe.
+              Distinctive websites and digital systems engineered for ambitious businesses across the UK, Ireland, and Europe.
             </p>
           </div>
 
@@ -87,11 +86,6 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
-              <li>
-                <Link href="/case-studies" className="text-[14px] text-bone/60 hover:text-bone transition-colors duration-200">
-                  Case Studies
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -103,7 +97,9 @@ export function Footer() {
             <ul className="space-y-3">
               {capabilities.map((cap) => (
                 <li key={cap}>
-                  <span className="text-[14px] text-bone/60">{cap}</span>
+                  <Link href="/work" className="text-[14px] text-bone/60 hover:text-bone transition-colors duration-200">
+                    {cap}
+                  </Link>
                 </li>
               ))}
             </ul>

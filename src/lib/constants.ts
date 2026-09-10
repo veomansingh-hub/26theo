@@ -5,9 +5,9 @@ export const SITE = {
   phone: '+353 85 225 8004',
   phoneTel: 'tel:+353852258004',
   whatsappUrl: 'https://wa.me/353852258004',
-  whatsappDefaultMessage: "Hi TheoMedia, I've been looking through your work and I'd like to discuss a website or digital project for my business.",
+  whatsappDefaultMessage: "Hi TheoMedia, I'm interested in discussing a website or digital system project for my business.",
   regions: 'UK · Ireland · Europe',
-  priceRange: '£895 – £9,500+',
+  priceRange: '£895 – £10,000+',
   currencies: 'GBP, EUR',
   year: new Date().getFullYear(),
 } as const;

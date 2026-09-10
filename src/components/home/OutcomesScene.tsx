@@ -2,14 +2,14 @@ import FadeIn from '@/components/ui/FadeIn';
 import SectionLabel from '@/components/ui/SectionLabel';
 
 const outcomes = [
-  'GET NOTICED',
-  'LOOK ESTABLISHED',
-  'BUILD TRUST',
+  'GET FOUND & SURFACED',
+  'LOOK CREDIBLE & ESTABLISHED',
+  'BUILD IMMEDIATE TRUST',
   'MAKE THE OFFER CLEAR',
-  'GENERATE ENQUIRIES',
-  'MAKE BOOKING EASY',
-  'SELL DIRECT',
-  'REDUCE ADMIN',
+  'GENERATE QUALIFIED ENQUIRIES',
+  'MAKE BOOKING EFFORTLESS',
+  'SELL DIRECT WITH ZERO COMMISSIONS',
+  'REDUCE OPERATIONAL & ADMIN DRAG',
 ];
 
 export default function OutcomesScene() {
@@ -19,12 +19,17 @@ export default function OutcomesScene() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
           <div className="lg:col-span-5 flex flex-col gap-6">
             <FadeIn>
-              <SectionLabel>OUTCOMES</SectionLabel>
+              <SectionLabel>COMMERCIAL OUTCOMES</SectionLabel>
             </FadeIn>
             <FadeIn delay={0.1}>
               <h2 className="text-editorial-lg font-display text-near-black">
                 A BEAUTIFUL WEBSITE ISN&apos;T THE END GOAL.
               </h2>
+            </FadeIn>
+            <FadeIn delay={0.2}>
+              <p className="font-sans text-stone text-[16px] md:text-[18px] leading-relaxed">
+                Design without commercial clarity is vanity. We build websites and digital systems around three measurable business fundamentals: <strong className="text-near-black">Get found. Get customers. Run better.</strong>
+              </p>
             </FadeIn>
           </div>
           
@@ -36,7 +41,7 @@ export default function OutcomesScene() {
                     <span className="text-[12px] md:text-[14px] text-stone font-sans w-8">
                       {(index + 1).toString().padStart(2, '0')}
                     </span>
-                    <span className="text-[24px] md:text-[32px] lg:text-[40px] font-display text-near-black tracking-wide">
+                    <span className="text-[22px] md:text-[30px] lg:text-[36px] font-display text-near-black tracking-wide">
                       {outcome}
                     </span>
                   </div>

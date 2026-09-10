@@ -132,7 +132,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     'Digital studio designing distinctive websites, ecommerce experiences and digital systems for ambitious businesses across the UK, Ireland, and Europe.',
                   email: 'hello@theomedia.co.uk',
                   telephone: '+353852258004',
-                  priceRange: '£895 - £9,500+',
+                  priceRange: '£895 - £10,000+',
                   currenciesAccepted: 'GBP, EUR',
                   paymentAccepted: 'Bank Transfer, Credit Card, Stripe, Apple Pay',
                   areaServed: [

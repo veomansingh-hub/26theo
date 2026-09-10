@@ -6,9 +6,9 @@ import Link from 'next/link';
 import FadeIn from '@/components/ui/FadeIn';
 import SectionLabel from '@/components/ui/SectionLabel';
 
-const ROW1 = ["ANGLE PARK", "HIKARU TERADA", "CARDINAL", "CATALYST", "NAMELESS", "ATELIER SNALLIS", "LINTU"];
-const ROW2 = ["OMNIUS", "AVENUE JUNO", "POLLINATION", "XQ AUTOMOTIVE", "OKAFFE", "PRIVATE STUDIO", "DENTALIS"];
-const ROW3 = ["MAISON LA GRIFFE", "COLUMN", "RESTAURANT O", "VOLKWERKE", "SANKAKKEI", "NEMO"];
+const ROW1 = ["BOUTIQUE HOSPITALITY", "DIRECT BOOKING ENGINES", "PRIVATE HEALTHCARE", "ARCHITECTURAL CONTRACTORS", "SPECIALIST AUTOMOTIVE", "LUXURY COMMERCE"];
+const ROW2 = ["BESPOKE WEB APPLICATIONS", "CUSTOM CMS ARCHITECTURE", "COMMISSION-FREE BOOKING", "OPERATIONAL WORKFLOWS", "RESERVATION SYSTEMS", "SECURE PORTALS"];
+const ROW3 = ["INDEPENDENT TRADES", "RESTAURANT SYSTEMS", "ECOMMERCE PLATFORMS", "HIGH-PERFORMANCE APIs", "FOUNDER-LED DIRECTION", "FULL CLIENT OWNERSHIP"];
 
 export default function TrustedHospitality() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -17,12 +17,12 @@ export default function TrustedHospitality() {
     <section ref={containerRef} className="bg-near-black text-bone py-32 md:py-48 overflow-hidden relative border-t border-bone/5">
       <div className="max-w-[1440px] mx-auto px-5 md:px-8 lg:px-12 mb-20 md:mb-32">
         <FadeIn>
-          <SectionLabel className="text-stone">TRUSTED BY</SectionLabel>
+          <SectionLabel className="text-stone">SPECIALISATIONS</SectionLabel>
           <h2 className="font-display text-[44px] md:text-[64px] lg:text-[80px] leading-[1.05] mb-8 text-bone mt-6">
-            BRANDS<br />WE&apos;VE WORKED WITH.
+            INDUSTRIES & SYSTEMS<br />WE ENGINEER.
           </h2>
           <p className="font-sans text-[17px] md:text-[20px] leading-relaxed text-stone max-w-2xl">
-            From independent studios and creative agencies to automotive, healthcare and premium lifestyle businesses, our work spans ambitious brands globally.
+            From direct-booking boutique hospitality and private clinical practices to specialist automotive, contractor platforms, and bespoke ecommerce systems across the UK, Ireland and Europe.
           </p>
         </FadeIn>
       </div>
@@ -35,14 +35,14 @@ export default function TrustedHospitality() {
 
       <div className="max-w-[1440px] mx-auto px-5 md:px-8 lg:px-12 mt-20 md:mt-32">
         <FadeIn className="flex flex-col items-start gap-8">
-          <p className="font-sans text-[15px] md:text-[18px] text-stone max-w-xl">
-            Selected brands and businesses we&apos;ve had the opportunity to work with.
+          <p className="font-sans text-[15px] md:text-[18px] text-stone max-w-xl leading-relaxed">
+            Every platform is designed and engineered from scratch around your specific customer journey and operational workflows.
           </p>
           <Link 
             href="/work"
             className="text-[12px] font-sans font-medium tracking-[0.15em] uppercase text-bone border-b border-bone/30 pb-1 hover:border-bone transition-colors inline-flex items-center"
           >
-            VIEW ALL WORK →
+            EXPLORE ALL CAPABILITIES →
           </Link>
         </FadeIn>
       </div>

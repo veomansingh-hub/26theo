@@ -24,26 +24,26 @@ export default function PricingPreview() {
             
             return (
               <FadeIn key={tier.name || index} delay={index * 0.1} className="h-full">
-                <div className={`h-full flex flex-col p-8 lg:p-10 bg-white ${isProfessional ? 'border-2 border-near-black' : 'border border-near-black/10'}`}>
-                  <h3 className="text-[20px] font-sans font-semibold mb-2 text-near-black uppercase tracking-wider">{tier.name}</h3>
+                <div className={`h-full flex flex-col p-8 lg:p-10 bg-white ${isProfessional ? 'border-2 border-near-black shadow-md' : 'border border-near-black/10'}`}>
+                  <h3 className="text-[18px] font-sans font-semibold mb-2 text-near-black uppercase tracking-wider">{tier.name}</h3>
                   <div className="mb-4">
-                    <span className="text-[14px] text-stone uppercase tracking-wide">From</span>
+                    <span className="text-[13px] text-stone uppercase tracking-wide">From</span>
                     <span className="block text-[32px] md:text-[40px] font-display text-near-black mt-1">{tier.price}</span>
                   </div>
-                  <p className="text-stone text-[15px] mb-8 pb-8 border-b border-near-black/10 min-h-[80px]">
+                  <p className="text-stone text-[14px] mb-8 pb-8 border-b border-near-black/10 min-h-[70px] leading-relaxed">
                     {tier.tagline || tier.description}
                   </p>
-                  <ul className="flex flex-col gap-4 mb-10 flex-grow">
-                    {tier.includes?.slice(0, 3).map((feature: string, fIndex: number) => (
-                      <li key={fIndex} className="flex items-start gap-3 text-[14px] text-near-black">
-                        <span className="mt-1 text-[10px] text-near-black/40">✦</span>
+                  <ul className="flex flex-col gap-3.5 mb-10 flex-grow">
+                    {tier.includes?.slice(0, 4).map((feature: string, fIndex: number) => (
+                      <li key={fIndex} className="flex items-start gap-3 text-[13px] text-near-black">
+                        <span className="mt-0.5 text-[10px] text-near-black/40">✦</span>
                         <span>{feature}</span>
                       </li>
                     ))}
                   </ul>
                   <Link 
                     href="/pricing"
-                    className="inline-block mt-auto text-[13px] font-semibold tracking-widest uppercase border-b border-near-black pb-1 hover:text-stone hover:border-stone transition-colors self-start"
+                    className="inline-block mt-auto text-[12px] font-semibold tracking-widest uppercase border-b border-near-black pb-1 hover:text-stone hover:border-stone transition-colors self-start"
                   >
                     LEARN MORE →
                   </Link>
@@ -54,14 +54,14 @@ export default function PricingPreview() {
         </div>
 
         <FadeIn delay={0.4}>
-          <div className="flex flex-col items-center text-center gap-6">
-            <p className="text-[18px] md:text-[20px] font-display text-near-black">
-              Full pricing details, specialist projects, and everything included.{' '}
+          <div className="flex flex-col items-center text-center gap-4">
+            <p className="text-[17px] md:text-[19px] font-display text-near-black">
+              Full pricing details, specialist engineering (from £10,000+), and complete package inclusions.{' '}
               <Link href="/pricing" className="border-b border-near-black/30 hover:border-near-black transition-colors">
-                View all pricing.
+                View all pricing →
               </Link>
             </p>
-            <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-[13px] text-stone uppercase tracking-widest font-semibold mt-4">
+            <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-[12px] text-stone uppercase tracking-widest font-semibold mt-2">
               <span>100% Client Ownership</span>
               <span className="text-near-black/20">·</span>
               <span>No lock-in</span>

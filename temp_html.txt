@@ -1,1 +1,0 @@
-Request to GET / on theomedia.vercel.app not allowed by policy

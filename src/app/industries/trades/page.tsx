@@ -10,8 +10,28 @@ export const metadata: Metadata = {
 };
 
 export default function TradesIndustryPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    name: 'Trades & Construction Website Design',
+    description: 'Custom website design for builders, roofers, and construction companies in the UK & Ireland.',
+    provider: {
+      '@type': 'Organization',
+      name: 'TheoMedia',
+      url: 'https://www.theomedia.co.uk'
+    },
+    areaServed: [
+      { '@type': 'Country', name: 'United Kingdom' },
+      { '@type': 'Country', name: 'Ireland' }
+    ]
+  };
+
   return (
     <main className="bg-bone min-h-screen pt-24 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="container mx-auto px-4 md:px-8 max-w-4xl">
         <FadeIn>
           <div className="text-[10px] md:text-xs tracking-[0.3em] text-near-black/50 uppercase font-medium mb-6">

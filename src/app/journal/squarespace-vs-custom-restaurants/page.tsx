@@ -10,8 +10,32 @@ export const metadata: Metadata = {
 };
 
 export default function SquarespaceVsCustomRestaurantsPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Squarespace vs Custom Website for Restaurants',
+    description: 'An honest comparison of Squarespace and custom bespoke websites for restaurants in the UK. When to use a builder and when to hire a web designer.',
+    author: {
+      '@type': 'Organization',
+      name: 'TheoMedia',
+      url: 'https://www.theomedia.co.uk'
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'TheoMedia',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://www.theomedia.co.uk/apple-touch-icon.png'
+      }
+    }
+  };
+
   return (
     <main className="bg-bone min-h-screen pt-24 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="container mx-auto px-4 md:px-8 max-w-4xl">
         <FadeIn>
           <div className="text-[10px] md:text-xs tracking-[0.3em] text-near-black/50 uppercase font-medium mb-6">

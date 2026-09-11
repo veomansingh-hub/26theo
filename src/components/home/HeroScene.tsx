@@ -51,9 +51,9 @@ export default function HeroScene() {
         >
           {/* Mobile-first top labels */}
           <div className="flex flex-col items-center text-center space-y-3 mb-6 md:mb-10 lg:mb-12 mt-6 md:mt-10 lg:mt-12">
-            <motion.div variants={itemVariants} className="text-[10px] md:text-xs tracking-[0.3em] text-bone/50 uppercase font-medium">
-              DIGITAL STUDIO · UK & EUROPE
-            </motion.div>
+            <motion.h1 variants={itemVariants} className="text-[10px] md:text-xs tracking-[0.3em] text-bone/50 uppercase font-medium">
+              INDEPENDENT WEB DESIGN & DIGITAL PRODUCT STUDIO · UK & IRELAND
+            </motion.h1>
           </div>
 
           <div className="w-full flex-grow flex flex-col justify-center items-center text-center pb-8 lg:pb-12">
@@ -90,7 +90,7 @@ export default function HeroScene() {
               variants={itemVariants}
               className="font-sans text-[15px] sm:text-[16px] lg:text-[18px] text-bone/60 max-w-2xl mx-auto leading-relaxed mb-10 md:mb-12 px-4"
             >
-              Distinctive websites, ecommerce platforms and custom digital systems engineered around three commercial fundamentals: <span className="text-bone/90 font-medium">Get found. Get customers. Run better.</span>
+              Distinctive bespoke websites, ecommerce platforms and custom digital systems engineered for the UK & Ireland, built around three commercial fundamentals: <span className="text-bone/90 font-medium">Get found. Get customers. Run better.</span>
             </motion.p>
             
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 w-full px-2">

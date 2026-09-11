@@ -2,20 +2,25 @@ import Link from 'next/link';
 import { SITE, NAV_LINKS } from '@/lib/constants';
 
 const capabilities = [
-  'Bespoke Websites',
-  'Ecommerce Architectures',
-  'Direct Booking Systems',
-  'Custom Web Applications',
-  'Operational Portals',
+  { label: 'Bespoke Websites', href: '/services/websites' },
+  { label: 'Ecommerce Architectures', href: '/services/ecommerce' },
+  { label: 'Custom Web Applications', href: '/services/web-applications' },
+  { label: 'Business Software', href: '/services/business-software' },
 ];
 
 const industryLinks = [
-  'Hospitality & Stays',
-  'Dining & Gastropubs',
-  'Automotive & Workshops',
-  'Trades & Contractors',
-  'Private Healthcare',
-  'Premium Ecommerce',
+  { label: 'Restaurant Website Design', href: '/industries/restaurants' },
+  { label: 'Hotel Website Design', href: '/industries/hotels' },
+  { label: 'Photographer Web Design', href: '/industries/photographers' },
+  { label: 'Trades Website Design', href: '/industries/trades' },
+  { label: 'Healthcare Clinic Web Design', href: '/industries/healthcare' },
+];
+
+const journalLinks = [
+  { label: 'Squarespace vs Custom', href: '/journal/squarespace-vs-custom' },
+  { label: 'Squarespace for Restaurants', href: '/journal/squarespace-vs-custom-restaurants' },
+  { label: 'Odoo Restaurant Alternative', href: '/journal/odoo-alternative-restaurants' },
+  { label: 'Web Design Ireland', href: '/web-design-ireland' },
 ];
 
 export function Footer() {
@@ -96,20 +101,36 @@ export function Footer() {
             </h4>
             <ul className="space-y-3">
               {capabilities.map((cap) => (
-                <li key={cap}>
-                  <Link href="/work" className="text-[14px] text-bone/60 hover:text-bone transition-colors duration-200">
-                    {cap}
+                <li key={cap.href}>
+                  <Link href={cap.href} className="text-[14px] text-bone/60 hover:text-bone transition-colors duration-200">
+                    {cap.label}
                   </Link>
                 </li>
               ))}
             </ul>
+            
             <h4 className="text-[11px] font-sans font-medium tracking-[0.2em] uppercase text-bone/30 mb-5 mt-8">
               Industries
             </h4>
             <ul className="space-y-3">
               {industryLinks.map((ind) => (
-                <li key={ind}>
-                  <span className="text-[14px] text-bone/60">{ind}</span>
+                <li key={ind.href}>
+                  <Link href={ind.href} className="text-[14px] text-bone/60 hover:text-bone transition-colors duration-200">
+                    {ind.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            
+            <h4 className="text-[11px] font-sans font-medium tracking-[0.2em] uppercase text-bone/30 mb-5 mt-8">
+              Journal & Regions
+            </h4>
+            <ul className="space-y-3">
+              {journalLinks.map((journal) => (
+                <li key={journal.href}>
+                  <Link href={journal.href} className="text-[14px] text-bone/60 hover:text-bone transition-colors duration-200">
+                    {journal.label}
+                  </Link>
                 </li>
               ))}
             </ul>

@@ -24,11 +24,14 @@ export default function IndustriesScene() {
         </div>
 
         <div className="flex flex-col border-t border-bone/10">
-          {industries.map((industry, index) => (
-            <FadeIn key={industry.name} delay={index * 0.05}>
-              <div className="group flex flex-col md:flex-row md:items-center justify-between py-8 border-b border-bone/10 transition-colors duration-300">
-                <span className="text-[20px] md:text-[24px] lg:text-[28px] font-display text-bone/70 group-hover:text-bone transition-colors duration-300 mb-4 md:mb-0">
+          {industries.map((industry, index) => {
+            const content = (
+              <div className={`group flex flex-col md:flex-row md:items-center justify-between py-8 border-b border-bone/10 transition-colors duration-300 ${industry.slug ? 'cursor-pointer' : ''}`}>
+                <span className="text-[20px] md:text-[24px] lg:text-[28px] font-display text-bone/70 group-hover:text-bone transition-colors duration-300 mb-4 md:mb-0 flex items-center gap-4">
                   {industry.name}
+                  {industry.slug && (
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity text-sm">→</span>
+                  )}
                 </span>
                 <div className="flex flex-wrap gap-2 md:justify-end">
                   {industry.priorities.map((priority, pIndex) => (
@@ -41,8 +44,19 @@ export default function IndustriesScene() {
                   ))}
                 </div>
               </div>
-            </FadeIn>
-          ))}
+            );
+            return (
+              <FadeIn key={industry.name} delay={index * 0.05}>
+                {industry.slug ? (
+                  <a href={industry.slug} className="block w-full">
+                    {content}
+                  </a>
+                ) : (
+                  content
+                )}
+              </FadeIn>
+            );
+          })}
         </div>
       </div>
     </section>

@@ -29,21 +29,18 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.theomedia.co.uk'),
   title: {
-    default: 'TheoMedia — Bespoke Websites & Digital Experiences | UK, Ireland & Europe',
+    default: 'TheoMedia — Independent Web Design & Digital Product Studio | UK & Ireland',
     template: '%s | TheoMedia',
   },
   description:
-    'TheoMedia is a digital studio designing and engineering distinctive websites, ecommerce experiences and digital systems for ambitious businesses across the UK, Ireland, and Europe.',
+    'TheoMedia is an independent digital studio engineering bespoke websites, ecommerce experiences, and business systems for ambitious brands across the UK and Ireland.',
   keywords: [
-    'web design UK',
-    'web development Ireland',
-    'bespoke website agency',
-    'custom web applications',
-    'digital studio UK',
-    'ecommerce development',
-    'hotel website design',
-    'restaurant website',
-    'business website packages',
+    'web design studio UK',
+    'web design agency UK',
+    'bespoke website design UK',
+    'custom website development UK',
+    'web design Ireland',
+    'digital product studio UK',
   ],
   authors: [{ name: 'TheoMedia' }],
   creator: 'TheoMedia',
@@ -62,26 +59,26 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    alternateLocale: ['en_IE', 'en_US'],
+    alternateLocale: ['en_IE'],
     url: 'https://www.theomedia.co.uk',
     siteName: 'TheoMedia',
-    title: 'TheoMedia — We Build Websites People Remember',
+    title: 'TheoMedia — Independent Web Design Studio',
     description:
-      'Distinctive websites, ecommerce experiences and digital systems for ambitious businesses across the UK, Ireland, and Europe.',
+      'We build websites and digital experiences people remember. Custom engineering for the UK and Ireland.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'TheoMedia — Digital Studio for Websites & Digital Experiences',
+        alt: 'TheoMedia — Independent Web Design & Digital Product Studio',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TheoMedia — Digital Studio | UK & Europe',
+    title: 'TheoMedia — Independent Web Design Studio',
     description:
-      'We build websites and digital experiences people remember. Bespoke design from £895.',
+      'We build websites and digital experiences people remember. Custom engineering for the UK and Ireland.',
     images: ['/og-image.jpg'],
   },
   alternates: {
@@ -115,21 +112,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   '@id': 'https://www.theomedia.co.uk/#website',
                   url: 'https://www.theomedia.co.uk/',
                   name: 'TheoMedia',
-                  alternateName: 'TheoMedia Digital Studio',
+                  alternateName: 'TheoMedia Independent Web Design Studio',
                   description:
-                    'TheoMedia designs and builds distinctive websites, ecommerce experiences and digital systems for ambitious businesses across the UK, Ireland, and Europe.',
+                    'TheoMedia is an independent digital studio designing and engineering bespoke websites, ecommerce experiences, and business systems for ambitious brands across the UK and Ireland.',
                   inLanguage: 'en-GB',
                   publisher: {
                     '@id': 'https://www.theomedia.co.uk/#organization',
                   },
                 },
                 {
-                  '@type': ['Organization', 'ProfessionalService'],
+                  '@type': 'Organization',
                   '@id': 'https://www.theomedia.co.uk/#organization',
                   name: 'TheoMedia',
                   url: 'https://www.theomedia.co.uk/',
+                  logo: 'https://www.theomedia.co.uk/apple-touch-icon.png',
                   description:
-                    'Digital studio designing distinctive websites, ecommerce experiences and digital systems for ambitious businesses across the UK, Ireland, and Europe.',
+                    'Independent web design and digital product studio engineering bespoke websites and digital experiences across the UK and Ireland.',
                   email: 'hello@theomedia.co.uk',
                   telephone: '+353852258004',
                   priceRange: '£895 - £10,000+',
@@ -137,16 +135,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   paymentAccepted: 'Bank Transfer, Credit Card, Stripe, Apple Pay',
                   areaServed: [
                     { '@type': 'Country', name: 'United Kingdom' },
-                    { '@type': 'Country', name: 'Ireland' },
-                    { '@type': 'AdministrativeArea', name: 'Europe' },
+                    { '@type': 'Country', name: 'Ireland' }
                   ],
                   knowsAbout: [
                     'Web Design',
-                    'Web Application Development',
+                    'Custom Website Development',
                     'Ecommerce Development',
+                    'Digital Products',
+                    'Business Systems',
                     'UI/UX Design',
-                    'Custom Software Engineering',
-                    'SEO Optimization',
+                    'SEO'
                   ],
                 },
               ],

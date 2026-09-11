@@ -8,8 +8,8 @@ import Button from '@/components/ui/Button';
 import { SITE } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Pricing & Packages | TheoMedia',
-  description: 'Transparent website and digital engineering pricing. Starter from £895, Professional from £2,495, Bespoke from £4,995, Specialist systems from £10,000+.',
+  title: 'How Much Does a Website Cost? | Pricing & Packages UK | TheoMedia',
+  description: 'Transparent website and digital engineering cost in the UK and Ireland. Starter from £895, Professional from £2,495, Bespoke from £4,995, Systems £10,000+.',
   alternates: {
     canonical: 'https://www.theomedia.co.uk/pricing',
   },

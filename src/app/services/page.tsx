@@ -7,8 +7,11 @@ import SectionLabel from '@/components/ui/SectionLabel';
 import Button from '@/components/ui/Button';
 
 export const metadata: Metadata = {
-  title: 'Services & Capabilities | TheoMedia',
-  description: 'Websites, ecommerce, booking experiences, web applications, business systems and integrations.',
+  title: 'Custom Website Development UK & Ireland | TheoMedia',
+  description: 'Bespoke websites, ecommerce platforms, web applications, and business systems engineered for ambitious brands.',
+  alternates: {
+    canonical: 'https://www.theomedia.co.uk/services',
+  }
 };
 
 export default function ServicesPage() {
@@ -18,12 +21,12 @@ export default function ServicesPage() {
       <section className="pt-24 pb-20 md:pt-32 md:pb-24 border-b border-stone/20">
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <FadeIn>
-            <SectionLabel className="text-stone mb-6">Capabilities</SectionLabel>
+            <SectionLabel className="text-stone mb-6">Capabilities & Services</SectionLabel>
             <h1 className="text-editorial-xl text-near-black mb-8">
-              WHAT WE BUILD
+              Bespoke Web Design & Digital Products
             </h1>
             <p className="text-lg md:text-xl text-charcoal font-sans max-w-2xl leading-relaxed">
-              Websites, ecommerce, booking experiences, web applications, business systems and integrations.
+              Custom website development, ecommerce, booking experiences, web applications, and business systems for the UK and Ireland.
             </p>
           </FadeIn>
         </div>
@@ -34,7 +37,7 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4 md:px-8 max-w-5xl">
           <div className="flex flex-col">
             {services.map((service, index) => (
-              <FadeIn key={service.slug || index}>
+              <FadeIn key={service.number || index}>
                 <div className="py-16 md:py-24 border-b border-stone/20 last:border-0 group">
                   <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
                     <div className="lg:w-1/3 flex gap-6">
